@@ -1,6 +1,6 @@
 import numpy as np
 import pandas as pd
-import random
+import matplotlib.pyplot as plt
 
 from NeuralNetwork import NeuralNetwork
 
@@ -35,15 +35,17 @@ def get_data_of(stock_symbol):
     return data_np[indices]
 
 
-def purge(data_of_symbol):
-    data = np.asarray(data_of_symbol)
+def purge(data_of_company):
+    data = np.asarray(data_of_company)
     indices = [i for i, x in enumerate(data[:, [7]]) if x != 0]
-    return data_of_symbol[indices]
+    return data_of_company[indices]
 
 
 def main():
 
-    data_of_symbol = get_data_of('ADBL')
+    data_of_company = get_data_of('ADBL')
+
+    data_of_symbol = purge(data_of_company)
 
     input_x_tt = data_of_symbol[:, [1]]
     input_x_tts = data_of_symbol[:, [2]]
@@ -80,6 +82,9 @@ def main():
 
     neural_net.evaluate(test_x, test_y)
     print(NeuralNetwork.accuracy/test_y.size)
+
+    # plt.plot(input_x_cp)
+    # plt.show()
 
 
 if __name__ == '__main__':
