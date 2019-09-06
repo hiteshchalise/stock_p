@@ -4,6 +4,8 @@ import numpy as np
 class NeuralNetwork:
     accuracy = 0
 
+    # temp = 0
+
     def __init__(self, x, y):
         self.input = x
         self.weights_1 = np.random.rand(self.input.shape[1], 5)
@@ -13,7 +15,13 @@ class NeuralNetwork:
 
     def feedforward(self):
         # layer1 is hidden layer
-        self.layer1 = sigmoid(np.dot(self.input, self.weights_1))
+        self.z1 = np.dot(self.input, self.weights_1)
+        # if NeuralNetwork.temp == 0:
+        #     print(self.z1)
+        self.layer1 = sigmoid(self.z1)
+        # if NeuralNetwork.temp == 0:
+        #     print(self.layer1)
+        # NeuralNetwork.temp = 1
         self.output = sigmoid(np.dot(self.layer1, self.weights_2))
 
     def backprop(self):

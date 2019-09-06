@@ -24,7 +24,7 @@ def normalize(data_col):
             min_of_row = row[0]
 
     for index, data in enumerate(data_col):
-        output[index] = (data[0] - min_of_row) / (max_of_row - min_of_row)
+        output[index] = round((data[0] - min_of_row) / (max_of_row - min_of_row), 2)
 
     return output
 
@@ -41,11 +41,12 @@ def purge(data_of_company):
     return data_of_company[indices]
 
 
-def main():
+def main(stock_symbol, purge_bool=False, train_split=0.85, show_cp_plot=False):
 
-    data_of_company = get_data_of('ADBL')
+    data_of_symbol = get_data_of(stock_symbol)
 
-    data_of_symbol = purge(data_of_company)
+    if purge_bool:
+        data_of_symbol = purge(data_of_symbol)
 
     input_x_tt = data_of_symbol[:, [1]]
     input_x_tts = data_of_symbol[:, [2]]
@@ -61,6 +62,7 @@ def main():
     y = (diff < 0).astype(int)
 
     normalized_x_tt = normalize(input_x_tt)
+
     normalized_x_tts = normalize(input_x_tts)
     normalized_x_tta = normalize(input_x_tta)
     normalized_x_op = normalize(input_x_op)
@@ -71,21 +73,24 @@ def main():
     normalized_x = np.concatenate((normalized_x_tt, normalized_x_tts, normalized_x_tta,
                                    normalized_x_op, normalized_x_max_p, normalized_x_min_p, normalized_x_cp), axis=1)
 
-    split = int(0.85 * len(y))
+    split = int(train_split * len(y))
     train_x, train_y = normalized_x[:split, :], y[:split, :]
     test_x, test_y = normalized_x[split:, :], y[split:, :]
 
     neural_net = NeuralNetwork(train_x, train_y)
-    for _ in range(150):
+    for _ in range(15000):
         neural_net.feedforward()
         neural_net.backprop()
 
     neural_net.evaluate(test_x, test_y)
     print(NeuralNetwork.accuracy/test_y.size)
 
-    # plt.plot(input_x_cp)
-    # plt.show()
+    if show_cp_plot:
+        plt.plot(input_x_cp)
+        plt.show()
 
 
 if __name__ == '__main__':
-    main()
+
+    main(stock_symbol='ADBL', purge_bool=True, show_cp_plot=False)
+
