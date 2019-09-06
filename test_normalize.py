@@ -30,7 +30,6 @@ class TestMain(TestCase):
     def test_purge(self):
         input_stock_data = sewapo_stock_data
         expected_purged_stock_data = purged_sewapo_stock_data
-
         self.assertTrue(np.array_equal(main.purge(input_stock_data), expected_purged_stock_data))
 
 

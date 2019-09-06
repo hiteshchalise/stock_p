@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36ae9a98-65b5-42bb-a6e1-4024b8aa56f1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/purged_sewapo.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sewapo.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_normalize.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_neuralNetwork.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNetwork.py" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNetwork.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/purged_sewapo.csv" beforeDir="false" afterPath="$PROJECT_DIR$/purged_sewapo.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sewapo.csv" beforeDir="false" afterPath="$PROJECT_DIR$/sewapo.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stocks_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/stocks_data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_normalize.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_normalize.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +43,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for test_normalize.TestMain.test_purge">
+  <component name="RunManager" selected="Python tests.Unittests for test_neuralNetwork.TestNeuralNetwork.test_neural_net">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="stock" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -63,6 +63,34 @@
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for test_neuralNetwork.TestNeuralNetwork" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="stock" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_neuralNetwork.TestNeuralNetwork&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for test_neuralNetwork.TestNeuralNetwork.test_neural_net" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="stock" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_neuralNetwork.TestNeuralNetwork.test_neural_net&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="Unittests for test_normalize.TestMain" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
@@ -93,26 +121,13 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for test_normalize.TestNormalize" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="stock" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_normalize.TestNormalize&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests for test_neuralNetwork.TestNeuralNetwork.test_neural_net" />
+        <item itemvalue="Python tests.Unittests for test_neuralNetwork.TestNeuralNetwork" />
+        <item itemvalue="Python tests.Unittests for test_normalize.TestMain" />
         <item itemvalue="Python tests.Unittests for test_normalize.TestMain.test_purge" />
         <item itemvalue="Python.main" />
-        <item itemvalue="Python tests.Unittests for test_normalize.TestMain" />
-        <item itemvalue="Python tests.Unittests for test_normalize.TestNormalize" />
       </list>
     </recent_temporary>
   </component>

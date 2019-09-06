@@ -44,10 +44,8 @@ def purge(data_of_company):
 def main(stock_symbol, purge_bool=False, train_split=0.85, show_cp_plot=False):
 
     data_of_symbol = get_data_of(stock_symbol)
-
     if purge_bool:
         data_of_symbol = purge(data_of_symbol)
-
     input_x_tt = data_of_symbol[:, [1]]
     input_x_tts = data_of_symbol[:, [2]]
     input_x_tta = data_of_symbol[:, [3]]
