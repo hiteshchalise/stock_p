@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36ae9a98-65b5-42bb-a6e1-4024b8aa56f1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test_neuralNetwork.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNetwork.py" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNetwork.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/purged_sewapo.csv" beforeDir="false" afterPath="$PROJECT_DIR$/purged_sewapo.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sewapo.csv" beforeDir="false" afterPath="$PROJECT_DIR$/sewapo.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stocks_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/stocks_data.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_normalize.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_normalize.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_neuralNetwork.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_neuralNetwork.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +40,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for test_neuralNetwork.TestNeuralNetwork.test_neural_net">
+  <component name="RunManager" selected="Python.main">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="stock" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -123,11 +120,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main" />
         <item itemvalue="Python tests.Unittests for test_neuralNetwork.TestNeuralNetwork.test_neural_net" />
         <item itemvalue="Python tests.Unittests for test_neuralNetwork.TestNeuralNetwork" />
         <item itemvalue="Python tests.Unittests for test_normalize.TestMain" />
         <item itemvalue="Python tests.Unittests for test_normalize.TestMain.test_purge" />
-        <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
   </component>

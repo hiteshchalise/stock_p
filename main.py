@@ -76,12 +76,12 @@ def main(stock_symbol, purge_bool=False, train_split=0.85, show_cp_plot=False):
     test_x, test_y = normalized_x[split:, :], y[split:, :]
 
     neural_net = NeuralNetwork(train_x, train_y)
-    for _ in range(15000):
+    for _ in range(1500):
         neural_net.feedforward()
         neural_net.backprop()
 
     neural_net.evaluate(test_x, test_y)
-    print(NeuralNetwork.accuracy/test_y.size)
+    print((NeuralNetwork.accuracy/test_y.size) * 100, '%')
 
     if show_cp_plot:
         plt.plot(input_x_cp)
@@ -90,5 +90,5 @@ def main(stock_symbol, purge_bool=False, train_split=0.85, show_cp_plot=False):
 
 if __name__ == '__main__':
 
-    main(stock_symbol='ADBL', purge_bool=True, show_cp_plot=False)
+    main(stock_symbol='ADBL', purge_bool=True, train_split=0.85 )
 

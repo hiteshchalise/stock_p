@@ -13,7 +13,8 @@ class TestNeuralNetwork(TestCase):
                       [1, 1, 1]])
         y = np.array([[0], [1], [1], [0]])
         nn = NeuralNetwork(x, y)
-        for _ in range(1000):
+        for _ in range(100):
             nn.feedforward()
             nn.backprop()
+        print(nn.output)
         self.assertTrue(np.array_equal(y, np.round(nn.output)))
